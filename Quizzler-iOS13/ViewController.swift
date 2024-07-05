@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     let quiz = [
         Question(text: "Four + Two is equal to Six", answer: "true"),
         Question(text: "Five + Three is greater then one", answer: "true"),
-        Question(text: "Three + eight is less then ten" , answer: "false") 
+        Question(text: "Three + eight is less then ten" , answer: "false")
     ]
     
     var NumberQuestion = 0
