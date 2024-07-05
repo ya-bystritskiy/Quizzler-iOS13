@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var TrueButton: UIButton!
     
     let quiz = [
-        ["Four + Two is equal to Six" , "true" ],
-       ["Five + Three is greater then one" , "true"],
-        ["Three + eight is less then ten" , "false"]
+        Question(text: "Four + Two is equal to Six", answer: "true"),
+        Question(text: "Five + Three is greater then one", answer: "true"),
+        Question(text: "Three + eight is less then ten" , answer: "false") 
     ]
     
     var NumberQuestion = 0
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         if NumberQuestion + 1 < quiz.count {
             NumberQuestion += 1
         } else {
-            NumberQuestion = 0 
+            NumberQuestion = 0
         }
         updateUI()
     }
